@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div >
+        <img src="img/MahleLabel.png" alt="Logo" title="Mahle">
+        
+    </div>  
+  <div class="text-center w-100" style="display: flex; flex-direction: column; align-items: center; max-height: 240px; height: 240px;">
+    <button class="btn btn-primary w-25 shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Mi ez?
+  </button>
+
+<div class="collapse mt-4" id="collapseExample">
+  <div class="card card-body bg-dark-subtle text-center" style="max-height: 200px; font-size: smaller;">
+    A Stellantis tavaly úgy döntött, hogy felmondja velünk a CVC kompresszorok szállításáról szóló szerződést 2026 júniusával.<br>
+    Mivel ők a fő vevőink, illetve az E-Kompresszor veszteséges, ez a gyár végét jelenti.<br>
+    A lenti számláló az addig hátralévő időt mutatja.
+  </div>
+</div>
+  </div>
+  
+
+    <div style="position: relative;">
+        <svg width="250" height="250" viewBox="0 0 250 250" class="circular-progress" id="cp">
+        
+        <circle class="bg"></circle>
+        <circle class="fg"></circle>
+        </svg>
+
+        
+        <div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;display: flex; flex-direction: column;">
+            <div id="dayCounter" style="width: 100%; height: 50%; display: grid; align-items: end; justify-items: center; padding: 5px;" class="fw-bold fs-2"></div>
+            <div id="timer" style="width: 100%; height: 50%; display: grid; align-items: start; justify-items: center;padding: 5px;" class="fw-bold fs-4"></div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
